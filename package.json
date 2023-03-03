@@ -1,0 +1,27 @@
+{
+  "name": "boltbot",
+  "version": "1.0.0",
+  "description": "Your friendly neighborhood robot",
+  "licence": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinknight242/boltbot.git"
+  },
+  "keywords": [
+    "bolt",
+    "slack"
+  ],
+  "author": "Erin Knight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erinknight242/boltbot/issues"
+  },
+  "homepage": "https://github.com/erinknight242/boltbot#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.12.2"
+  }
+}
