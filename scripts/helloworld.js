@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  app.message('hello', async ({ message, say }) => {
+  app.message(/hello/i, async ({ message, say }) => {
     await say(`Hey there <@${message.user}>!`);
   });
 
