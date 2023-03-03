@@ -48,5 +48,5 @@ app.action('button_click', async ({ body, ack, say }) => {
 });
 
 app.message('who are you?', async ({ message, say }) => {
-  await say(`Local bot`);
+  await say(`Azure bot`);
 });
