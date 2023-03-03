@@ -16,6 +16,8 @@ quips = [
 
 module.exports = (app) => {
   app.message('beer', async ({ message, say }) => {
-    await say(quips[random(quips.length)]);
+    if(random(100) >= 40) {
+      await say(quips[random(quips.length)]);
+    }
   });
 }
