@@ -36,4 +36,8 @@ module.exports = (app) => {
   app.message('who are you?', async ({ message, say }) => {
     await say(`Azure bot`);
   });
+
+  app.message(/^ping$/, async ({ say }) => {
+    await say('Pong!');
+  });
 }
