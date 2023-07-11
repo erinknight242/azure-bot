@@ -17,7 +17,7 @@ export default (app) => {
       try {
         await app.client.reactions.add({ name: emojiName, channel, timestamp });
       } catch (err) {
-        console.error('Error adding reaction', err);
+        console.error(`Error adding reaction '${emojiName}': ${err}`);
       }
     }
   };
