@@ -1,6 +1,6 @@
-import { random } from '../utils/utils';
+const { random } = require('../utils/utils');
 
-export default (app) => {
+module.exports = (app) => {
   app.message(/beer/i, async ({ message }) => {
     await react(message, ['beer', 'beers', 'beer-parrot', 'happy_beer']);
   });
